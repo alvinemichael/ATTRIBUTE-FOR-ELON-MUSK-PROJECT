@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Feedback Form</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: darkgreen;
+}
+
+header {
+    background-color: #d37006;
+    color: #151414;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #171111;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #0b0b0b;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #0e0e0e;
+    border-radius: 5px;
+}
+
+form input[type="file"] {
+    margin-top: 5px;
+}
+
+form button {
+    background-color: #1009ca;
+    color: rgb(10, 10, 10);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #a55716;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>User Feedback Form</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="home.html">Logout</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <center><img src="OIP (2).jfif" alt="Elon Musk Profile Picture" class="picture" id="profilePic"></center>
+
+    <div class="container">
+        <form id="feedbackForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea><br>
+            
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" name="image" accept="image/*"><br>
+            
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('feedbackForm');
+    
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+    
+            // Get form data
+            const formData = new FormData(form);
+            
+            // You can send the formData to the server using AJAX or any other method here
+    
+            // Reset the form after submission
+            form.reset();
+    
+            // Provide feedback to the user
+            alert('Thank you for your feedback!');
+        });
+    });
+    </script>
+</body>
+</html>

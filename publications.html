@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elon Musk's Publications</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #07a11c;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    color: black;
+    background-color: chocolate;
+    text-align: center;
+}
+
+.publications {
+    background-color: #f08a0d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #007bff;
+    color: #060606;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #db7909;
+}
+
+.hidden {
+    display: none;
+}
+
+a.home-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #0576ef;
+}
+.picture {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Publications on Elon Musk</h1>
+        <div class="publications">
+            <h2>Attribute: Visionary Entrepreneur</h2>
+            <center><img src="OIP (1).jfif" alt="Elon Musk Profile Picture" class="picture" id="profilePic"></center>
+
+            <p>Explore the publications about Elon Musk's visionary approach to entrepreneurship.</p>
+            <button id="toggleButton">Toggle Details</button>
+            <div id="details" class="hidden">
+                <p>Elon Musk's visionary entrepreneurship has led to groundbreaking innovations in various industries, including electric vehicles, space exploration, and renewable energy.</p>
+                <p>His publications offer insights into his strategies, challenges, and futuristic visions.</p>
+            </div>
+            <a href="home.html" class="home-link">Back to Home</a>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.getElementById('toggleButton');
+    const details = document.getElementById('details');
+
+    toggleButton.addEventListener('click', function() {
+        details.classList.toggle('hidden');
+        if (details.classList.contains('hidden')) {
+            toggleButton.textContent = 'Toggle Details';
+        } else {
+            toggleButton.textContent = 'Hide Details';
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

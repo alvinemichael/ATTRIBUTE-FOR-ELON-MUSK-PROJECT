@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elon Musk's Professional Background</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #54a511;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    background-color: #f57200;
+    color: #0c0b0a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+button:hover {
+    background-color: #f57200;
+}
+
+.buttons {
+    text-align: center;
+}
+.link a:hover {
+    text-decoration: underline;
+    color: #de6610;}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #3300ff;
+    color: #3d14f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ed7113;
+}
+.picture {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Elon Musk's Professional Background</h1>
+        <center><img src="OIP (5).jfif" alt="Elon Musk Profile Picture" class="picture" id="profilePic"></center>
+        <p>Elon Musk is a visionary entrepreneur known for his work in various fields including space exploration, electric vehicles, and renewable energy. Here's a brief overview of his professional journey:</p>
+        <ul>
+            <li>Co-founder of PayPal</li>
+            <li>CEO and lead designer of SpaceX</li>
+            <li>CEO and product architect of Tesla, Inc.</li>
+            <li>Founder of The Boring Company</li>
+            <li>Co-founder of Neuralink</li>
+            <li>Co-founder and initial co-chairman of OpenAI</li>
+            <li>Co-founder of Zip2</li>
+        </ul>
+        <div class="buttons">
+            <button id="aboutBtn">About Elon Musk</button>
+            <button id="homeBtn">Go to Home</button><br>
+            <a href="home.html" class="homeLink">Back to Home</a>
+        </div>
+    </div>
+    <script>
+        document.getElementById('aboutBtn').addEventListener('click', function() {
+    window.location.href = 'profile.html';
+});
+
+document.getElementById('homeBtn').addEventListener('click', function() {
+    window.location.href = 'home.html';
+});
+
+    </script>
+</body>
+</html>

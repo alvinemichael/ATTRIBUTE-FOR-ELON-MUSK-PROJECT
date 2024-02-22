@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Attributes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #08b41f;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: black;
+            background-color: chocolate;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #0e0606;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #b36500;
+        }
+        #fileInput {
+            display: none;
+        }
+        .profile-pic {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Your Attributes</h1>
+        <center><img src="OIP (1).jfif" alt="Elon Musk Profile Picture" class="profile-pic" id="profilePic">
+        <img src="OIP (1).jfif" alt="Elon Musk Profile Picture" class="profile-pic" id="profilePic"></center>
+        <div class="button-container">
+            <input type="file" id="fileInput" accept=".pdf" onchange="handleFile()">
+            <label for="fileInput" class="button">Upload PDF</label>
+            <button class="button" onclick="viewAttributes()">View Attributes</button>
+        </div>
+    </div>
+
+    <script>
+        function handleFile() {
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+            
+            if (file) {
+                if (file.type === 'application/pdf') {
+                    alert('File uploaded successfully: ' + file.name);
+                    // You can add further processing here
+                } else {
+                    alert('Please upload a PDF file.');
+                }
+            }
+        }
+
+        function viewAttributes() {
+            // Redirect to home.html to view attributes
+            window.location.href = 'home.html';
+        }
+    </script>
+</body>
+</html>

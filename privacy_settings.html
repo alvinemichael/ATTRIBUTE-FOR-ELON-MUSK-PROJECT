@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Settings - Elon Musk</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #187814;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.settings {
+    background-color: #f08d0b;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #080808;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f57200;
+}
+
+.link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.link a:hover {
+    text-decoration: underline;
+    color: #de6610;
+}
+.picture {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Settings - Elon Musk</h1>
+        <center><img src="OIP (4).jfif" alt="Elon Musk Profile Picture" class="picture" id="profilePic"></center>
+        <div class="settings">
+            <label for="attribute">Attribute:</label>
+            <input type="text" id="attribute" value="Progress Schedule" edit>
+            <div class="buttons">
+                <button id="publicBtn">Public</button>
+                <button id="privateBtn">Private</button>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="home.html">Go to Home</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('publicBtn').addEventListener('click', function() {
+    alert('Attribute set to Public');
+});
+
+document.getElementById('privateBtn').addEventListener('click', function() {
+    alert('Attribute set to Private');
+});
+
+    </script>
+</body>
+</html>

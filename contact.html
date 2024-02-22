@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Elon Musk</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3e8a36;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #dc7e0b;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #0f0f0f;
+}
+
+p {
+    color: #160707;
+    margin-bottom: 20px;
+}
+
+.contactButton {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contactButton:hover {
+    background-color: #e05504;
+}
+
+.homeLink {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #111010;
+}
+
+.homeLink:hover {
+    text-decoration: underline;
+}
+.picture {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Elon Musk</h1>
+        <center><img src="OIP (3).jfif" alt="Elon Musk Profile Picture" class="picture" id="profilePic"></center>
+        <p>If you have any inquiries or suggestions, feel free to reach out to Elon Musk.</p>
+        <button id="emailButton" class="contactButton">Email</button>
+        <button id="phoneButton" class="contactButton">Call</button>
+        <a href="home.html" class="homeLink">Back to Home</a>
+    </div>
+
+    <script>
+        document.getElementById('emailButton').addEventListener('click', function() {
+    window.location.href = 'mailto:elon.musk@example.com';
+});
+
+document.getElementById('phoneButton').addEventListener('click', function() {
+    window.location.href = 'tel:+254702761410';
+});
+
+    </script>
+</body>
+</html>

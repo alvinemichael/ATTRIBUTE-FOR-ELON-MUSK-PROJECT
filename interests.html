@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interests of Elon Musk</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #06721f;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #dd7327;
+    margin-bottom: 20px;
+}
+
+.interests {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #100f0f;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #dd7327;
+}
+
+.home-link {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #040404;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+.picture {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Interests of Elon Musk</h1>
+        <div class="interests">
+            <button id="space">Space Exploration</button>
+            <button id="tech">Technology</button>
+            <button id="renewable">Renewable Energy</button>
+        </div>
+        <center><img src="OIP (4).jfif" alt="Elon Musk Profile Picture" class="picture" id="profilePic"></center>
+
+        <a href="home.html" class="home-link">Back to Home</a>
+    </div>
+
+    <script>
+        document.getElementById('space').addEventListener('click', function() {
+    alert('Elon Musk has a keen interest in space exploration, evident through his ventures such as SpaceX.');
+});
+
+document.getElementById('tech').addEventListener('click', function() {
+    alert('Elon Musk is deeply involved in various technological innovations, including electric vehicles and artificial intelligence.');
+});
+
+document.getElementById('renewable').addEventListener('click', function() {
+    alert('Elon Musk is an advocate for renewable energy sources and has spearheaded projects like Tesla\'s solar solutions.');
+});
+
+    </script>
+</body>
+</html>

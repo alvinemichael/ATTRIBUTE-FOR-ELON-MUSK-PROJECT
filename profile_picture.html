@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elon Musk Tribute</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.link a:hover {
+    text-decoration: underline;
+    color: #de6610;
+}
+.profile-pic {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #d87007;
+}
+
+.home-link {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.home-link:hover {
+    color: #de6610;
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="OIP (1).jfif" alt="Elon Musk Profile Picture" class="profile-pic" id="profilePic">
+        <div class="buttons">
+            <button id="likeBtn">Like</button>
+            <button id="commentBtn">Comment</button>
+            <button id="shareBtn">Share</button><br>
+        </div>
+        <a href="home.html" class="home-link">Go to Home</a>
+    </div>
+
+    
+    
+    
+    <script>
+        document.getElementById('liketBtn').addEventListener('click', function() {
+    window.location.href = 'user_feedback.html';
+});
+
+document.getElementById('commenteBtn').addEventListener('click', function() {
+    window.location.href = 'user_feedback.html';
+});
+
+document.getElementById('shareBtn').addEventListener('click', function() {
+    window.location.href = 'user_feedback.html';
+});
+
+    </script>
+    </body>
+</html>
